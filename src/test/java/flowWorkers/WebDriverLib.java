@@ -33,22 +33,22 @@ public class WebDriverLib {
         }catch (WebDriverException e){}
     }
 
-    public WebElement locateElement(String selectorType, String selectorValue){
-        try{
-            switch(selectorType.toLowerCase()){
-                case "id": return driver.findElement(By.id(selectorValue));
-                case "name": return driver.findElement(By.name(selectorValue));
-                case "class": return driver.findElement(By.className(selectorValue));
-                case "link": return driver.findElement(By.linkText(selectorValue));
-                case "plink": return driver.findElement(By.partialLinkText(selectorValue));
-                case "tag": return driver.findElement(By.tagName(selectorValue));
-                case "xpath": return driver.findElement(By.xpath(selectorValue));
-                case "css": return driver.findElement(By.cssSelector(selectorValue));
-            }
-            return null;
-        } catch (Exception e){}
-        return null;
-    }
+//    public WebElement locateElement(String selectorType, String selectorValue){
+//        try{
+//            switch(selectorType.toLowerCase()){
+//                case "id": return driver.findElement(By.id(selectorValue));
+//                case "name": return driver.findElement(By.name(selectorValue));
+//                case "class": return driver.findElement(By.className(selectorValue));
+//                case "link": return driver.findElement(By.linkText(selectorValue));
+//                case "plink": return driver.findElement(By.partialLinkText(selectorValue));
+//                case "tag": return driver.findElement(By.tagName(selectorValue));
+//                case "xpath": return driver.findElement(By.xpath(selectorValue));
+//                case "css": return driver.findElement(By.cssSelector(selectorValue));
+//            }
+//            return null;
+//        } catch (Exception e){}
+//        return null;
+//    }
 
 
 }
